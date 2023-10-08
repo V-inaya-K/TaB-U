@@ -1,0 +1,13 @@
+.footer{
+    height: 0%;
+    position: relative;
+}
+
+.footer .footer-bottom{
+    
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+   
+}

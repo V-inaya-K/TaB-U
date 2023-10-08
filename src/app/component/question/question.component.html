@@ -1,0 +1,88 @@
+<app-navbar></app-navbar>
+<body>
+<br>
+<mat-card>
+    <div class="container" style="background-color: aliceblue;">
+        <div class="card">
+            <div class="d-flex justify-content-between p-3">
+                
+                <div class="quiz-header">
+                    <h4 style="font-family: cursive;">Backspace Taboo Quiz..</h4>
+                    <span style="font-style: italic;">Welcome {{name}} 😊❤️</span>
+                </div>
+            </div>
+    
+            <ng-container *ngIf="!isQuizCompleted">
+                <div class="d-flex justify-content-around py-3">
+                    <div class="score">
+                        <h5>{{points}} Points</h5>
+                    </div>
+                    <div class="question-remain">
+                        <span style="font-style: italic;">Question &#9658; {{currentQuestion+1}} of {{questionList.length}}</span>
+                    </div>
+                    <div class="timer">
+                        <h5>{{counter}} sec ⏱</h5>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="question">
+                    <div class="card">
+                        <h3>{{questionList[currentQuestion]?.questionText}}</h3>
+                    </div>
+                </div>
+                <!-- <div class="options">
+                    <ol *ngFor="let option of questionList[currentQuestion]?.options">
+                        <li (click)="answer(currentQuestion+1,option)">
+                            <div appChangeBg [isCorrect]="option.correct" class="card">
+                                {{option.text}}
+                            </div>
+                        </li>
+    
+                    </ol>
+                </div> -->
+                <div class="options">
+                    <ol class="e" *ngFor="let option of questionList[currentQuestion]?.options">
+                        <li class="d" (click)="answer(currentQuestion+1,option)">
+                            <!-- <div appChangeBg [isCorrect]="option.correct" class="card"> -->
+                           
+                            <div class="card">
+                                {{option.text}}
+                            </div>
+                            <!-- </div> -->
+                        </li>
+    
+                    </ol>
+                </div>
+                <button [disabled]="currentQuestion===0" mat-raised-button color="primary" (click)="previousQuestion()">Previous</button>
+                <button mat-raised-button color="primary" (click)="resetQuiz()" style="margin-left: .4cm;">Reset</button>
+                <button mat-raised-button color="primary" (click)="nextQuestion()" style="margin-left: .4cm;">Next</button>
+                
+            </ng-container>
+    
+            <ng-container class="k" *ngIf="isQuizCompleted">
+                <div class="row d-flex justify-content-between">
+                    <img style="width: 50%;"  src="../../../assets/R.png">
+                    <div class="result text-center col-md-6 col-sm-12">
+                        <h3>Congratulations😍😍 <br>You Have successfully completed the quiz 👏👏</h3>
+                        <p>Total Question Attempted &#10145; {{questionList.length}} </p>
+                        <p>Total Correct Answers &#10145; {{correctAnswer}} </p>
+                        <p>Total Wrong Answers &#10145; {{inCorrectAnswer}} </p>
+                        <p>You Scored &#10145; {{points}} Points </p>
+                    </div>
+                </div>
+                <button mat-raised-button color="primary" routerLink="/welcome" >Home</button>
+                <button mat-raised-button color="primary" style="margin-left: .4cm;"><a href="mailto:?subject=I,{{name}} scored {{points}} points in the quiz.&body=I am so happy To share that I also Earned a Bagde.You can see badge from the link https://drive.google.com/file/d/1U2PJdE5fd2DzXiV_3vAPfrlE7z7AT1aD/view?usp=sharing">Share</a></button>
+                <a href="../../../assets/ANSWERS.png" download="solutions" ><button mat-raised-button color="primary" style="margin-left: .4cm;">Solutions</button></a>
+            </ng-container>
+    
+        </div>
+    </div>
+</mat-card>
+</body>
+<div class="footer">
+    <div class="footer-bottom">
+        <app-footer></app-footer>
+    </div>
+</div>

@@ -1,0 +1,98 @@
+{
+    "questions": [{
+            "questionText": "People believe that doing exercise/physical activity during menstruation aggravate problems. What do you think?",
+            "options": [{
+                    "text": "Yes"
+                    
+                },
+                {
+                    "text": "A Myth",
+                    "correct": true
+                },
+                {
+                    "text": "Not 100% correct"
+                },
+                {
+                    "text": "I dont know"
+                }
+            ],
+            "explanation": "Peacock is the national bird of India."
+        },
+        {
+            "questionText": "Sanitary Napkins at Government run Pradhan Mantri Bhartiya Janaushadhi Kendra are available for what price?",
+            "options": [{
+                    "text": "1 Rs",
+                    "correct": true
+                },
+                {
+                    "text": "6 Rs"
+                },
+                {
+                    "text": "10 Rs"
+                },
+                {
+                    "text": "None of the above"
+                }
+            ],
+           
+            "explanation": "C is E's Aunt."
+        },
+        {
+            "questionText": "Some strict dietary restrictions are also followed during menstruation by menstruating girls.What do you think?",
+            "options": [{
+                "text": "A Myth",
+                "correct": true
+            },
+            {
+                "text": "Yes"
+            },
+            {
+                "text": "Not 100% correct"
+            },
+            {
+                "text": "I dont know"
+            }
+        ],
+            "explanation": "Synonym for word 'Nostalgic' is Sentimental."
+        },
+        {
+            "questionText": "Time gap between 2 consecutive menstrual cycles?",
+            "options": [{
+                "text": "15 days"
+                
+            },
+            {
+                "text": "10 days"
+            },
+            {
+                "text": "I dont know"
+            },
+            {
+                "text": "25 days",
+                "correct": true
+            }
+        ],
+            "explanation": "Use the idiom' Hang in there' to encourage somebody in a difficult situation."
+        },
+        {
+            "questionText": "Women must not use sanitary pads instead they must used leaves and clother for better health as said by society,What do you choose?",
+            "options": [{
+                "text": "Not 100% correct"
+                
+            },
+            {
+                "text": "Yes"
+            },
+            {
+                "text": "They are wrong",
+                "correct": true
+                
+            },
+            {
+                "text": "I dont know"
+            }
+        ],
+            "explanation": "Answer is C According to dictionary."
+        }
+    ]
+}

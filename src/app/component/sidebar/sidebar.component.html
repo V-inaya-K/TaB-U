@@ -1,0 +1,124 @@
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@500&family=Indie+Flower&family=Kalam&family=Satisfy&family=Tiro+Devanagari+Hindi:ital@1&display=swap" rel="stylesheet">
+<style>
+    mat-card{
+        width: 9cm;
+        margin-left: .6cm;
+        border-color: black;
+        border-width: .1cm;
+        
+    }
+    mat-subheader{
+        height: 3cm;
+    }
+   
+    .container {
+        margin-right:10%;
+        margin-left:10%;
+        margin-top: 00%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+        color: #00FFFF;
+    }
+    button{
+        margin: .1cm;
+    }
+    button:hover{
+        background-color: rgb(0, 1, 1);
+    }
+    body{
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .form-control{
+        height: 1cm;
+        font-size: .8cm;
+        
+        
+    }
+   
+    /* input{
+        max-width: 85%;
+    }*/
+    input:hover,input:hover::placeholder{
+        border-color: rgb(255, 0, 34);
+        color:black ;
+    }
+    input{
+        height: 1.5cm;
+        border-radius: 10px;
+        border-color: rgb(0, 174, 255);
+        color: cadetblue;
+        max-width: 85%;
+        resize: none;
+        margin: .5cm;
+        font-size: .7cm;
+        
+    } 
+    input::placeholder{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: .7cm;
+        font-weight: bold;
+        opacity: 0.5;
+        color: #ff0062;
+        
+    }
+    p.h{
+        font-size: 3.1cm;
+        text-align:justify;
+        margin-left:30% ;
+        font-family:'caveat','2Kalam';
+        color: rgb(0, 0, 0);
+    }
+    li{
+        color: black;
+        text-align:left;
+    }
+    h2,h1{
+        color: black;
+    }
+</style>
+<script>
+    
+</script>
+<body  style="height: 18cm;">
+    <!-- <p style="margin-left: 15cm;font-size: 1cm;">Welcome to JasperPortal...<br><br>Hope You'll Enjoy :D</p> -->
+<br><br>
+<div class="container">
+<mat-card >
+    <mat-action-list>
+        <div mat-subheader><h2>Rules:</h2></div>
+        <div mat-subheader>
+          
+              <li>1. Correct Question gives you 10 points</li>
+              <li>2. There will be 5 Questions.Not based on Scientific theories</li>
+              <li>3. Incorrect question gives to -2 points</li>
+              <li>4. You will have 60 sec to answer each question</li>
+              <li>5. Answering all questions is mandatory</li>
+          
+      </div>
+      
+    </mat-action-list>
+</mat-card>
+<p class="h">Welcome to TAB-U,<br><br><br><br><br>A Solution to Social Evils</p>
+<mat-card>
+    <mat-action-list >
+        <div mat-subheader><h1>Fill To Play</h1></div>
+        <!-- <label for="" style="padding: 15px;">Enter your name:</label><br> -->
+        <input #name type="text" maxlength="20" placeholder="ENTER YOUR NAME" autocomplete="off" required class="form-control" style="margin-left: .4cm; color: rgb(0, 136, 255);"><br>
+        <!-- <button  routerLink=""><mat-icon mat-list-icon>home</mat-icon>Home</button> -->
+        <button mat-raised-button color="primary" routerLink="/question" (click)="Welc();startQuiz()">Start Quiz</button>
+        <!-- <button mat-list-item routerLink=""><mat-icon mat-list-icon>home</mat-icon>Home</button> -->
+    </mat-action-list>
+</mat-card>
+</div>
+<br><br>
+
+<!-- <div class="container">
+    <br><p style="font-size: 2cm;font-family: lobster;">Welcome to JasperPortal...</p><br><br>
+    <br><p style="font-size: 2cm;font-family: lobster;">Hope You're Enjoying.</p>
+</div> -->
+<br>
+</body>

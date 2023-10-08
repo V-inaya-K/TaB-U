@@ -1,0 +1,49 @@
+mat-card{
+    
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: -10%;
+    margin-top: 4%;
+    /* margin-bottom: ;
+    max-height: 7cm; */
+    
+}
+button:hover{
+    background-color: rgb(3, 125, 125);
+}
+.card {
+    
+    
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+a{
+    text-decoration: none ;
+    color: white;
+}
+
+
+
+li .card:hover {
+    border: 1px solid rgb(17, 0, 255);
+    background-color: rgb(194, 253, 255);
+}
+
+
+ol {
+    padding: 0;
+}
+
+body{
+    /* background-color: rgb(0, 134, 251); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url('../../../assets/yu.webp') ;
+}

@@ -1,0 +1,86 @@
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+     .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+        
+        }
+     /* .info{
+        position: absolute;
+        top: 35px;
+        right: 40px;
+     } */
+  
+</style>
+<!-- <app-navbar [dataFromLogin]="dataToNav"></app-navbar> -->
+<body>
+<!-- <body bgcolor="#436EEE" >
+    <br>
+    <p style="font-family: Covered By Your Grace;color: aliceblue  ;font-size:1.25cm;"><img src="../../../assets/logo.png" style="margin-left:.2cm;margin-top:.2cm;width: 1.4cm; height:1.1cm ;" >Jasper Portal</p> -->
+   <!-- <div class="info">
+    <button mat-button [matMenuTriggerFor]="Course"><b style="color: white;">TOPICS</b><mat-icon style="color: white;">info</mat-icon></button>
+    <mat-menu #Course="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="Reasoning">Reasoning</button>
+      <button mat-menu-item [matMenuTriggerFor]="General_knowledge">General Knowledge</button>
+    </mat-menu>
+    
+    <mat-menu #Reasoning="matMenu">
+      <button mat-menu-item >Alphanumeric series</button>
+      <button mat-menu-item >Coding-Decoding</button>
+      <button mat-menu-item >Blood Relations</button>
+      <button mat-menu-item>Analogies</button>
+    </mat-menu>
+    
+    <mat-menu #General_knowledge="matMenu">
+      <button mat-menu-item>Current Affairs</button>
+      <button mat-menu-item>Major Events</button>
+      <button mat-menu-item>Basic GK</button>
+    </mat-menu>
+    
+   </div>-->
+    <div class="container"><br> 
+        <mat-card style="width: 10cm;margin:auto; ">
+        <div class="container text" style="margin-top: 1cm;" >
+            <img src="../../../assets/t.png" >
+        </div>
+        <div class="text">
+            <h3>Credentials!</h3>
+            <form style="margin-bottom: 1cm;" (ngSubmit)="submitLogin()">
+                <mat-form-field appearance="outline" style="width: 7.5cm;">
+                    <mat-label><b>Username</b></mat-label>
+                    <input 
+                       [(ngModel)]="user.name" name="name" matInput placeholder="Your name here" maxlength="50" >
+                </mat-form-field><br>
+                <mat-form-field appearance="outline" style="width: 7.5cm;">
+                    <mat-label><b>Age</b></mat-label>
+                    <input 
+                       [(ngModel)]="user.mail" name="mail"matInput placeholder="Your Current age here" maxlength="3">
+                </mat-form-field><br>
+                <mat-form-field appearance="outline" style="width: 7.5cm;">
+                    <mat-label><b>Email</b></mat-label>
+                    <input 
+                       [(ngModel)]="user.age" name="age"matInput placeholder="Your Mail Address here" maxlength="30">
+                </mat-form-field><br>
+                <mat-form-field appearance="outline" style="width: 7.5cm;">
+                    <mat-label><b>City</b></mat-label>
+                    <input 
+                       [(ngModel)]="user.city" name="city" matInput placeholder="Your City here" maxlength="30">
+                </mat-form-field><br>
+                <button mat-raised-button color="primary" type="submit" >Proceed</button>
+            </form>
+        </div>
+        <!-- your name is {{ user.name }} {{user.age }} {{ user.mail }}  {{ user.city }} -->
+    </mat-card>
+    <br><br><br>
+    <!-- <app-footer></app-footer> -->
+    </div>
+    
+    
+</body>
+<!-- <br><br><br><br>-->
+
+
+
